@@ -1,0 +1,301 @@
+/* -------- MEDIA QUERIES (WEBPAGE BREAK POINTS) -------- */
+
+/* LG SMALL LAPTOPS: 1024px - 1280px */
+
+@media(maxwidth: ){
+/* 1150px /16px = 72rem */
+/* 72rem x 16px = 1152px */
+    html{
+
+        font-size: 56.25%;
+        
+
+    }
+
+}
+
+/* 
+  BREAKPOINTS:
+  - Phone: 0-600px
+  - Tablet Portrait: 600-900px
+  - Tablet Landscape: 900-1200px
+  - Desktop: 1200px+
+*/
+
+/* --------------------------- PHONE (0-600px) --------------------------- */
+@media (max-width: 37.5em) {
+    /* Typography */
+    :root {
+        --text-h1: 4.8rem;
+        --text-h2: 3.6rem;
+        --text-h3: 3rem;
+        --text-h4: 2.4rem;
+        --text-h5: 2rem;
+        --text-paragraph: 1.8rem;
+    }
+
+    /* Layout */
+    .container {
+        width: 95%;
+        padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        height: 8rem;
+        padding: 0 1.5rem;
+    }
+
+    .logo-md {
+        font-size: 4rem;
+    }
+
+    .nav-btn-container {
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: calc(100vh - 8rem);
+        padding: 4rem 0;
+    }
+
+    .hero-heading {
+        font-size: var(--text-h1);
+        margin-bottom: 2rem;
+    }
+
+    .hero-paragraph {
+        font-size: var(--text-paragraph);
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+    }
+
+    .hero-btn-container {
+        flex-direction: column;
+        /* width: 100%; */
+        gap: 1.5rem;
+    }
+
+    .hero-btn-container .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Features Section */
+    .features-section {
+        margin-bottom: 15rem;
+    }
+
+    .features-main-heading {
+        font-size: var(--text-h2);
+        margin-bottom: 4rem;
+        padding: 0 1rem;
+    }
+
+    .features-grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    /* Feature Items */
+    .grid-item-1,
+    .grid-item-2,
+    .grid-item-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .feature-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-heading {
+        font-size: var(--text-h3);
+        margin-bottom: 1.5rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        margin-bottom: 15rem;
+    }
+
+    .cta-card {
+        padding: 4rem 2rem;
+        border-radius: 1.2rem;
+    }
+
+    .cta-heading {
+        font-size: var(--text-h2);
+        margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 4rem 0;
+    }
+
+    .logo-sm {
+        font-size: 3.2rem;
+    }
+
+    .social-icons-container {
+        gap: 1.2rem;
+    }
+
+    .social-icons {
+        width: 1.8rem;
+    }
+
+    .footer-links-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+/* --------------------------- TABLET PORTRAIT (600-900px) --------------------------- */
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+    /* Typography */
+    :root {
+        --text-h1: 5.2rem;
+        --text-h2: 4rem;
+        --text-h3: 3.2rem;
+        --text-h4: 2.6rem;
+        --text-h5: 2.2rem;
+    }
+
+    /* Layout */
+    .container {
+        width: 92%;
+    }
+
+    /* Navigation */
+    .navbar {
+        height: 9rem;
+    }
+
+    .logo-md {
+        font-size: 4.8rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: calc(100vh - 9rem);
+    }
+
+    .hero-heading {
+        font-size: var(--text-h1);
+    }
+
+    .hero-paragraph {
+        max-width: 60rem;
+    }
+
+    /* Features Section */
+    .features-grid-container {
+        gap: 8rem 4rem;
+    }
+
+    .feature-img {
+        max-width: 35rem;
+    }
+
+    /* CTA Section */
+    .cta-card {
+        padding: 6rem 4rem;
+    }
+}
+
+/* --------------------------- TABLET LANDSCAPE (900-1200px) --------------------------- */
+@media (min-width: 56.25em) and (max-width: 75em) {
+    /* Typography */
+    :root {
+        --text-h1: 5.6rem;
+        --text-h2: 4.4rem;
+        --text-h3: 3.6rem;
+        --text-h4: 2.8rem;
+        --text-h5: 2.4rem;
+    }
+
+    /* Layout */
+    .container {
+        width: 94%;
+    }
+
+    /* Navigation */
+    .navbar {
+        height: 9.5rem;
+    }
+
+    /* Features Section */
+    .features-grid-container {
+        gap: 10rem 6rem;
+    }
+
+    .feature-img {
+        max-width: 38rem;
+    }
+
+    /* CTA Section */
+    .cta-card {
+        padding: 8rem 6rem;
+    }
+}
+
+/* --------------------------- DESKTOP (1200px+) --------------------------- */
+@media (min-width: 75em) {
+    /* Container max-width is already set in main CSS */
+    .container {
+        width: 90%;
+    }
+}
+
+/* --------------------------- LARGE DESKTOP (1400px+) --------------------------- */
+@media (min-width: 87.5em) {
+    :root {
+        --text-h1: 6.2rem;
+        --text-h2: 4.8rem;
+        --text-h3: 4rem;
+        --text-h4: 3.2rem;
+        --text-h5: 2.4rem;
+    }
+}
+
+/* --------------------------- PRINT STYLES --------------------------- */
+@media print {
+    .navbar,
+    .hero-btn-container,
+    .cta-section,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+}

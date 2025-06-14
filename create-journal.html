@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    
+    <title>Create Journal</title>
+</head>
+<body>
+    
+    <h1>Create Journal</h1>
+    <form action="/api/v1/journals" method="post">
+        <!--add form elements here  -->
+
+        <label for="main-title">Journal Title</label>
+        <input id="main-title" type="text" name="title" placeholder="Enter title" maxlength="255">
+        <!-- the line break tag is only temporary, not good practice will remove it soon -->
+         <!-- the proper way is to use css -->
+        <br>
+
+        
+
+        <label for="journal-category">Journal Category</label>
+        <select id="journal-category" name="Category" >
+            <option value="task">Task</option>
+            <option value="notes">Notes</option>
+            <option value="idea">Idea</option>
+            <option value="goal">Goal</option>
+            <option value="habit">Habit</option>
+            <option value="mood">Mood</option>
+            <option value="event">Event</option>
+            <option value="memory">Memory</option>
+        </select>
+
+        <!-- Remember to remove the break line tag -->
+        <br>
+
+        <label for="journal-entry">Journal Entry</label>
+        <textarea id="journal-entry" name="entry" cols="30" rows="5" maxlength="500"></textarea>
+
+        <!-- remember to remove the line break tag -->
+        <br>
+
+        <!-- the button tag be anywhere in the html file but it has to be in the form tag for it to work as expected and submit the form -->
+        
+        <!-- if you set the type in the button to reset it wont submit the form but will reset , that is the behaviour of the reset -->
+        <button type="submit">Submit</button>
+
+        
+    </form>
+
+</body>
+</html>
